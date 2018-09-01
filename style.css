@@ -1,5 +1,5 @@
 /* ---------------------------
-General
+         General
 ---------------------------*/
 body {
     font-family: 'Arial', sans-serif;
@@ -8,35 +8,42 @@ body {
     text-align: center;
 }
 
-p {
-    text-align: left;
-    margin-top: 40px;
+h1 {
+    margin-bottom: 5px
 }
 
+p {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.container {
+    margin: 20px 25%
+}
+
+/* ---------------------------
+         Header
+---------------------------*/
 header {
     width:100%;
     height:20px;
     position:fixed;
     z-index: 102;
     top:0;
-    left:0;                                         /*fixed guide*/
+    left:0;                                         
     border-bottom: 2px white solid;
     background-color: #ffffff;
     padding: 10px 70px;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.logo {
+.logo-left {
     float: left;
     margin-left: 1%;
     margin-top: 0;
     height: 25px
 }
 
-.guide {
+.right {
     float: right;
     margin-right: 10%;
     display: -webkit-inline-box;
@@ -56,42 +63,9 @@ header {
     line-height:10px;
 }
 
-.light {
-    background-color: #f9f9f9;
-    background-image: url(./assets/leaf-top-left.png), url(./assets/leaf-top-right.png);
-    background-position: 0 45%, 100% 55%;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 250px, 250px;
-}
-.leaf {
-    width:250px
-}
-
-.leaf-right {
-    width:250px;
-    margin-top: 100px;
-}
-
-.contentOne {
-    width:80%;
-    margin-bottom: -90px;
-}
-
-.logo-mid {
-    margin-top: 250px;
-    width: 250px;
-}
-
-.p-mid {
-    width: 30%;
-    margin:30px 35%;
-    font-weight: bold;
-}
-
-h1 {
-    margin-bottom: 5px
-}
-
+/* ---------------------------
+         Title Style
+---------------------------*/
 .gold {
     color: #bb8b15;
 }
@@ -111,58 +85,120 @@ h1 {
     margin: 0;
     width:20%
 }
+
+/* ---------------------------
+         Section 1
+---------------------------*/
+.s1 {
+    background-color: #f9f9f9;
+    background-image: url(./assets/leaf-top-left.png), url(./assets/leaf-top-right.png);
+    background-position: 0 45%, 100% 55%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 250px, 250px;
+}
+
+.content-image {
+    width:80%;
+    margin-bottom: -90px;
+}
+
+.logo-mid {
+    margin-top: 250px;
+    width: 250px;
+}
+
+.p-mid {
+    width: 30%;
+    margin:30px 35%;
+    font-weight: bold;
+}
+
 .p-bottom {
     border-top: 1px rgb(185, 184, 184) solid;
     border-bottom: 1px rgb(185, 181, 181) solid;
     color:rgb(168, 167, 167);
     text-align: left;
     width: 60%;
-    margin: 20px 20%;
+    margin: 30px 20%;
     padding: 10px 0;
     font-size: 10px;
 }
 
-.container {
-    margin: 20px 25%
-}
-.s1 {
-    width: 60%;
-    text-align: left;
-    
-}
-
-.container-s1 {
-    max-width: 500px;
-}
-.pink {
+/* ---------------------------
+          Section 2
+---------------------------*/
+.s2 {
     background: #f5ddda url(./assets/leaf-middle-left.png) no-repeat left;
     background-size: 250px;
     background-position-y: bottom;
     /* opacity:0.6; */
     /* filter:alpha(opacity=60); */
     z-index:-1;
-    padding-top: 100px
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
-.s2 {
+.table-s2 {
     table-layout: fixed; 
     width: 60%;
     margin: 20px 20%
 }
-.lightgrey {
+
+.title-s2 {
+    width: 60%;
+    text-align: left;
+    
+}
+
+.container-s2 {
+    max-width: 500px;
+}
+
+/* ---------------------------
+          Section 3
+---------------------------*/
+.s3 {
     background: #f9f9f9 url(./assets/flower-middle-left.png) no-repeat left;
     background-position-y: top;
     background-size: 300px;
-}
-
-.title{
-    margin-top: 0;
     padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .slides_container {
-    margin: 0 10%;
-    width: 100%;          
+    margin: 30px auto;
+    width: 1024px;          
     height: 700px;
     overflow: hidden;
+}
+
+/* slider point */         
+.pagination {
+    margin:26px auto;
+    width:100px;
+}
+
+.pagination li {
+    float:left;
+    margin:0 1px;
+}
+
+.pagination li a {
+    display:block;
+    width:12px;
+    height:0;
+    padding-top:12px;
+    float:left;
+    overflow:hidden;
+}
+
+.pagination li.current a {
+    background-position:0 -12px;
+}
+/* ---------------------------
+          Section 4
+---------------------------*/
+.s4 {
+    padding-top: 20px;
+    
 }
