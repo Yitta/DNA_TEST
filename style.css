@@ -148,9 +148,13 @@ header {
           Section 2
 ---------------------------*/
 .s2 {
-    background: #f5ddda url(./assets/leaf-middle-left-min.png) no-repeat left;
+    background: rgb(243, 147, 138) url(./assets/leaf-middle-left-min.png) no-repeat left;
     background-size: 250px;
     background-position-y: bottom;
+}
+
+.s2-bg {
+    background:rgba(255,255,255,0.8);
     padding-top: 150px;
     padding-bottom: 50px;
 }
@@ -167,35 +171,18 @@ header {
 .title-s2 {
     width: 60%;
     text-align: left;
-    
 }
 
 .container-s2 {
     max-width: 500px;
 }
 
-.s2:before{
-    position: absolute;
-    left: 0;
-    content: "";
-    background-color: #f5ddda;
-    opacity: 0.8;
-    z-index: 1;
-    width: 250px;
-    height: 81%;
-    background-position-y: bottom;
-}
-/* .inner {
-    width: 500px;
-    background: #f5ddda;
-} */
-
 /* ---------------------------
           Section 3
 ---------------------------*/
 .s3 {
     background: #f9f9f9 url(./assets/flower-middle-left-min.png) no-repeat left;
-    background-position-y: top;
+    background-position: 0 10%;
     background-size: 300px;
     padding-top: 50px;
     padding-bottom: 20px;
@@ -230,9 +217,17 @@ header {
           Section 4
 ---------------------------*/
 .table-s4 {
-    margin: 40px auto
+    margin: 40px auto;
+    width: 60%;
 }
 
 .table-left {
     display: inline-grid;
+}
+
+/* ---------------------------
+         Footer
+---------------------------*/
+.footer-img {
+    width:100%;
 }
