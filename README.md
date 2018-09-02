@@ -1,8 +1,9 @@
 # DNA_TEST
 
-### This web page is available at https://yitta.github.io/DNA_TEST/
+### Introduction:
+This web page is available at https://yitta.github.io/DNA_TEST/
 
-### The requirement is listed as below
+### Requirement:
 *Rev1 2018.08*
 
 Build a web page according to the provided `final.png`, creating the appropriate HTML structure, CSS styling and JS code. All the needed assets are provided in the `assets` folder.
