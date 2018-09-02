@@ -1,24 +1,37 @@
 /* ---------------------------
          General
 ---------------------------*/
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.5;
     margin: 0;
-    text-align: center;
+    text-align: center;    
 }
 
-h1 {
-    margin-bottom: 5px
+h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 10px;
+    line-height: 40px;
+    letter-spacing: 2px;
 }
 
 p {
     text-align: left;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .container {
-    margin: 20px 28%
+    margin: 20px 28%;
+    display: flex;
+    flex-direction: column
 }
 
 /* ---------------------------
@@ -26,7 +39,7 @@ p {
 ---------------------------*/
 header {
     width:100%;
-    height:20px;
+    height:40px;
     position:fixed;
     z-index: 102;
     top:0;
@@ -44,7 +57,7 @@ header {
 
 .right {
     float: right;
-    margin-right: 10%;
+    margin-right: 3%;
     display: -webkit-inline-box;
 }
 
@@ -70,17 +83,17 @@ header {
 
 .b-bottom {
     border-top: 3px #000000 solid;
-    margin: 0 45%;
+    margin:0 45% 30px 45%;
 }
 
 .b-bottom-g {
     border-top: 3px #bb8b15 solid;
-    margin: 0 45%;
+    margin: 0 45% 30px 45%;
 }
 
 .b-bottom-l {
     border-top: 3px #000000 solid;
-    margin: 0;
+    margin: 0 0 30px 0;
     width:20%
 }
 
@@ -95,11 +108,6 @@ header {
     background-size: 250px, 250px;
 }
 
-.content-image {
-    width:80%;
-    margin-bottom: -90px;
-}
-
 .logo-mid {
     margin-top: 250px;
     width: 250px;
@@ -109,6 +117,15 @@ header {
     width: 30%;
     margin:30px 35%;
     font-weight: bold;
+}
+
+/* first letter */
+.text:first-letter{
+    font-size: 60px;
+    color:#bb8b15;
+    float: left;
+    padding-right:10px;
+    text-transform:uppercase;
 }
 
 .p-bottom {
@@ -122,6 +139,11 @@ header {
     font-size: 10px;
 }
 
+.content-image {
+    width:80%;
+    margin-bottom: -90px;
+}
+
 /* ---------------------------
           Section 2
 ---------------------------*/
@@ -129,17 +151,17 @@ header {
     background: #f5ddda url(./assets/leaf-middle-left.png) no-repeat left;
     background-size: 250px;
     background-position-y: bottom;
-    /* opacity:0.6; */
-    /* filter:alpha(opacity=60); */
-    z-index:-1;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 50px;
 }
 
 .table-s2 {
     table-layout: fixed; 
     width: 60%;
-    margin: 20px 20%
+    min-width: 820px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .title-s2 {
@@ -152,6 +174,22 @@ header {
     max-width: 500px;
 }
 
+.s2:before{
+    position: absolute;
+    left: 0;
+    content: "";
+    background-color: #f5ddda;
+    opacity: 0.8;
+    z-index: 1;
+    width: 250px;
+    height: 81%;
+    background-position-y: bottom;
+}
+/* .inner {
+    width: 500px;
+    background: #f5ddda;
+} */
+
 /* ---------------------------
           Section 3
 ---------------------------*/
@@ -163,45 +201,34 @@ header {
     padding-bottom: 20px;
 }
 
-.slides_container {
-    margin: 30px auto;
-    width: 1024px;          
-    height: 700px;
-    overflow: hidden;
+/* slider */         
+#slider {
+    position:relative;
+    margin:0 auto;
+    top:0px;
+    left:0px;
+    width:980px;
+    height:380px;
+    overflow:hidden;
+    visibility:hidden;
 }
 
-/* slider point */         
-.pagination {
-    margin:26px auto;
-    width:100px;
-}
-
-.pagination li {
-    float:left;
-    margin:0 1px;
-}
-
-.pagination li a {
-    display:block;
-    width:12px;
-    height:0;
-    padding-top:12px;
-    float:left;
+#slider div {
+    cursor:default;
+    position:relative;
+    top:0px;
+    left:0px;
+    width:980px;
+    height:380px;
     overflow:hidden;
 }
-
-.pagination li.current a {
-    background-position:0 -12px;
+#slider div div div img{
+    margin-left: 10px;
 }
 
 /* ---------------------------
           Section 4
 ---------------------------*/
-.s4 {
-    padding-top: 20px;
-    
-}
-
 .table-s4 {
     margin: 40px auto
 }

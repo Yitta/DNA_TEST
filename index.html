@@ -5,18 +5,42 @@
     <meta charset="UTF-8">
     <title>DNA TEST</title>
     <!-- javascript-->
-    <script src="js/jquery-1.4.4.min.js"></script>
-    <script src="js/slides.min.jquery.js"></script>
-    <script>
-        $(function () {
-            $('#slides').slides({
-                preload: true,
-                preloadImage: 'img/loading.gif',
-                play: 5000,
-                pause: 300,
-                hoverPause: true
-            });
-        });
+    <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideWidth: 720,
+            };
+
+            var jssor_1_slider = new $JssorSlider$("slider", jssor_1_options);
+
+            /*#region responsive code begin*/
+            var MAX_WIDTH = 2048;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
     </script>
     <!-- js finished-->
     <link href="./style.css" rel="stylesheet" type="text/css" media="all" />
@@ -42,16 +66,14 @@
             Story by Chander | whimn.com.au
         </div>
         <div class="container">
-            <h1 class="gold">FASHION FATIGUE CAN STRIKE WHEN YOU LEAST EXPECT IT.</h1>
+            <h2 class="gold">FASHION FATIGUE CAN STRIKE WHEN YOU LEAST EXPECT IT.</h2>
             <div class="b-bottom-g"></div>
-            <p>
-                Dyin' ain't much of a livin', boy. here. put that in your report!" and "i may have founda way out of here. you want a guarantee,
+            <p class="text">
+                Ayin' ain't much of a livin', boy. here. put that in your report!" and "i may have founda way out of here. you want a guarantee,
                 buy a toaster. here. put that in your report!" and"i may have found a way out of here. this is the ak-47
                 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so
                 remember it. this is the ak-47assault rifle, the preferred weapon of your enemy; and it makes a distinctive
-                sound when fired atyou, so remember it. don't p!ss down my back and tell me it's raining. this is the ak-47
-                assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you,so
-                remember it.
+                sound when fired atyou, so remember it. don't p!ss down my back and tell me it's raining.
             </p>
             <p>
                 don't p!ss down my back and tell me it's raining. this is the ak-47 assault rifle, the preferred weapon of your enemy; and
@@ -67,11 +89,12 @@
 
     <!-- second section-->
     <div class="s2">
+        <div class="inner"></div>
         <table class="table-s2">
             <tr>
                 <td class="container-s2">
                     <div class="title-s2">
-                        <h1>SHAKE UP YOUR SHELVES</h1>
+                        <h2>SHAKE UP YOUR SHELVES</h2>
                         <div class="b-bottom-l"></div>
                     </div>
                     <p>
@@ -79,15 +102,12 @@
                         buy a toaster. here. put that in your report!" and"i may have found a way out of here. this is the
                         ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired
                         at you, so remember it. this is the ak-47assault rifle, the preferred weapon of your enemy; and it
-                        makes a distinctive sound when fired atyou, so remember it. don't p!ss down my back and tell me it's
-                        raining. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive
-                        sound when fired at you,so remember it.
+                        makes a distinctive sound when fired atyou, so remember it.
                     </p>
                     <p>
                         don't p!ss down my back and tell me it's raining. this is the ak-47 assault rifle, the preferred weapon of your enemy; and
                         it makes a distinctive sound when fired at you,so remember it. don't p!ss down my back and tell me
-                        it's raining. this is my gun, clyde! man'sgotta know his limitations. ever notice how sometimes you
-                        come across somebody you shouldn't have f**ked with? well, i'm that guy.
+                        it's raining. this is my gun, clyde! man'sgotta know his limitations.
                     </p>
                 </td>
                 <td>
@@ -100,37 +120,39 @@
     <!-- third section-->
     <div class="s3">
         <div class="container">
-            <h1>REMOVE ALL THE BLACK</h1>
+            <h2>REMOVE ALL THE BLACK</h2>
             <div class="b-bottom"></div>
             <p>
                 Dyin' ain't much of a livin', boy. here. put that in your report!" and "i may have founda way out of here. you want a guarantee,
                 buy a toaster. here. put that in your report!" and"i may have found a way out of here. this is the ak-47
-                assault rifle.
+                assault rifle.this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive
+                sound when fired at you,so remember it.
             </p>
             <p>
                 don't p!ss down my back and tell me it's raining. this is the ak-47 assault rifle, the preferred weapon of your enemy; and
                 it makes a distinctive sound when fired at you,so remember it. don't p!ss down my back and tell me it's raining.
             </p>
         </div>
-        <div id="slides">
-            <div class="slides_container">
-                <a>
+        
+        <div id="slider">
+            <div data-u="slides">
+                <div>
                     <img src="assets/slider-1.png" width="100%">
-                </a>
-                <a>
+                </div>
+                <div>
                     <img src="assets/slider-2.png" width="100%">
-                </a>
-                <a>
+                </div>
+                <div>
                     <img src="assets/slider-3.png" width="100%">
-                </a>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- forth section-->
-    <div class="s4">
+    <div>
         <div class="container">
-            <h1 class="gold">DOLL UP THE BASICS</h1>
+            <h2 class="gold">DOLL UP THE BASICS</h2>
             <div class="b-bottom-g"></div>
             <p>
                 Dyin' ain't much of a livin', boy. here. put that in your report!" and "i may have founda way out of here. you want a guarantee,
@@ -166,6 +188,7 @@
         <img style="width:100%" src="assets/leaves-bottom.png">
     </div>
 
+    <script type="text/javascript">jssor_1_slider_init();</script>
 </body>
 
 </html>
