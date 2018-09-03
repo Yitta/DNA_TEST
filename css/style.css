@@ -176,6 +176,7 @@ header {
 .left-s2 {
     max-width: 500px;
     margin-top: 50px;
+    margin-right: 20px;
     flex: 1;
 }
 
