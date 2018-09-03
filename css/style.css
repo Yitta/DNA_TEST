@@ -120,7 +120,7 @@ header {
 }
 
 /* first letter */
-.text:first-letter{
+.text:first-letter {
     font-size: 60px;
     color:#bb8b15;
     float: left;
@@ -160,7 +160,6 @@ header {
 }
 
 .container-s2 {
-    table-layout: fixed; 
     width: 60%;
     min-width: 820px;
     max-width: 980px;
