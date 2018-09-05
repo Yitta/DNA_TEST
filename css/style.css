@@ -98,7 +98,7 @@ header {
 /* ---------------------------
          Section 1
 ---------------------------*/
-.lazy-s1 {
+.s1 {
     background-color: #f9f9f9;
     background-image: url(../assets/leaf-top-left-min.png), url(../assets/leaf-top-right-min.png);
     background-position: 0 45%, 100% 55%;
@@ -146,6 +146,12 @@ header {
           Section 2
 ---------------------------*/
 .lazy-s2 {
+    background: rgb(243, 147, 138) url(../assets/placeholder-image.png) no-repeat left;
+    background-size: 250px;
+    background-position-y: bottom;
+}
+
+.lazy-s2.visible {
     background: rgb(243, 147, 138) url(../assets/leaf-middle-left-min.png) no-repeat left;
     background-size: 250px;
     background-position-y: bottom;
@@ -186,6 +192,14 @@ header {
           Section 3
 ---------------------------*/
 .lazy-s3 {
+    background: #f9f9f9 url(../assets/placeholder-image.png) no-repeat left;
+    background-position: 0 10%;
+    background-size: 300px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.lazy-s3.visible {
     background: #f9f9f9 url(../assets/flower-middle-left-min.png) no-repeat left;
     background-position: 0 10%;
     background-size: 300px;

@@ -35,10 +35,10 @@ jssor_1_slider_init = function () {
 };
 
 /**
- * Lazy-background image
+ * Lazy-loading background image
  */
 document.addEventListener("DOMContentLoaded", function() {
-    var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+    var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-s2, .lazy-s3"));
   
     if ("IntersectionObserver" in window) {
       let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
