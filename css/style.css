@@ -194,6 +194,21 @@ header {
 }
 
 /* ---------------------------
+      Parallax scrolling
+---------------------------*/
+.parallax-window {
+    min-height: 50rem;
+    background: 0 0;
+    /* filter: grayscale(100%); */
+    background-image: url(../assets/NLMD-2481_Parallax.png);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ---------------------------
           Section 3
 ---------------------------*/
 .lazy-s3 {
