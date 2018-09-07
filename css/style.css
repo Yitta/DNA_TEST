@@ -9,10 +9,12 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.5;
+    /* font-family: 'Arial', sans-serif; */
+    line-height: 1.6;
     margin: 0;
-    text-align: center;    
+    text-align: center;
+    font-weight: 300;
+    color: #333;
 }
 
 h2 {
@@ -47,6 +49,7 @@ header {
     border-bottom: 2px white solid;
     background-color: #ffffff;
     padding: 10px 13%;
+    box-shadow: 0 0.25rem 1.3125rem -0.125rem rgba(0,0,0,.44);
 }
 
 .logo-left {
@@ -113,8 +116,9 @@ header {
 
 .p-mid {
     width: 30%;
-    margin:30px 35%;
+    margin:30px auto;
     font-weight: bold;
+    min-width: 370px;
 }
 
 /* first letter */
@@ -127,9 +131,9 @@ header {
 }
 
 .p-bottom {
-    border-top: 1px rgb(185, 184, 184) solid;
-    border-bottom: 1px rgb(185, 181, 181) solid;
-    color:rgb(168, 167, 167);
+    border-top: 1px #9b9b9b solid;
+    border-bottom: 1px #9b9b9b solid;
+    color:#9b9b9b;
     text-align: left;
     width: 60%;
     margin: 30px 20%;
@@ -140,6 +144,7 @@ header {
 .content-image {
     width:80%;
     margin-bottom: -90px;
+    transition: all .6s ease-in-out;
 }
 
 /* ---------------------------
