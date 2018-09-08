@@ -117,10 +117,12 @@ header {
 .p-mid {
     width: 30%;
     margin:30px auto;
-    font-weight: bold;
     min-width: 370px;
 }
 
+.strapline-author {
+    font-weight: bold;
+}
 /* first letter */
 .text:first-letter {
     font-size: 60px;
@@ -138,7 +140,7 @@ header {
     width: 60%;
     margin: 30px 20%;
     padding: 10px 0;
-    font-size: 10px;
+    font-size: .5rem;
 }
 
 .content-image {
@@ -197,9 +199,20 @@ header {
       Parallax scrolling
 ---------------------------*/
 .parallax-window {
-    min-height: 50rem;
+    min-height: 40rem;
     background: 0 0;
     /* filter: grayscale(100%); */
+    /* background-image: url(../assets/NLMD-2481_Parallax.png); */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-window.visible {
+    min-height: 40rem;
+    background: 0 0;
     background-image: url(../assets/NLMD-2481_Parallax.png);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
