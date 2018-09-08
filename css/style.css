@@ -200,20 +200,12 @@ header {
 ---------------------------*/
 .parallax-window {
     min-height: 40rem;
-    background: 0 0;
-    /* filter: grayscale(100%); */
-    /* background-image: url(../assets/NLMD-2481_Parallax.png); */
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .parallax-window.visible {
     min-height: 40rem;
     background: 0 0;
-    background-image: url(../assets/NLMD-2481_Parallax.png);
+    background-image: url(../assets/NLMD-2481_Parallax-min.png);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
