@@ -8,8 +8,11 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Alegreya Sans',sans-serif;
+}
+
 body {
-    /* font-family: 'Arial', sans-serif; */
     line-height: 1.6;
     margin: 0;
     text-align: center;
@@ -21,7 +24,6 @@ h2 {
     margin-top: 20px;
     margin-bottom: 5px;
     font-weight: 10px;
-    line-height: 40px;
     letter-spacing: 2px;
 }
 
@@ -117,12 +119,15 @@ header {
 .p-mid {
     width: 30%;
     margin:30px auto;
-    min-width: 370px;
+    min-width: 380px;
+    font-size: 1.3rem ;
+    line-height: 1.4;
 }
 
 .strapline-author {
     font-weight: bold;
 }
+
 /* first letter */
 .text:first-letter {
     font-size: 60px;
