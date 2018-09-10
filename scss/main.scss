@@ -1,3 +1,8 @@
+$container-margin: 20px 28%;
+$background-color-primary: #f9f9f9;
+$background-color-pink: rgb(243, 147, 138);
+$background-color-transparency: rgba(255, 255, 255, 0.8);
+
 /* ---------------------------
          General
 ---------------------------*/
@@ -33,7 +38,7 @@ p {
 }
 
 .container {
-  margin: 20px 28%;
+  margin: $container-margin;
   display: flex;
   flex-direction: column;
 }
@@ -104,7 +109,7 @@ header {
          Section 1
 ---------------------------*/
 .s1 {
-  background-color: #f9f9f9;
+  background-color: $background-color-primary;
   background-image: url(../assets/leaf-top-left-min.png), url(../assets/leaf-top-right-min.png);
   background-position: 0 45%, 100% 55%;
   background-repeat: no-repeat, no-repeat;
@@ -158,19 +163,19 @@ header {
           Section 2
 ---------------------------*/
 .lazy-s2 {
-  background: #f3938a url(../assets/placeholder-image.png) no-repeat left;
+  background: $background-color-pink url(../assets/placeholder-image.png) no-repeat left;
   background-size: 250px;
   background-position-y: bottom;
 }
 
 .lazy-s2.visible {
-  background: #f3938a url(../assets/leaf-middle-left-min.png) no-repeat left;
+  background: $background-color-pink url(../assets/leaf-middle-left-min.png) no-repeat left;
   background-size: 250px;
   background-position-y: bottom;
 }
 
 .s2-bg {
-  background: rgba(255, 255, 255, 0.8);
+  background: $background-color-transparency;
   padding-top: 150px;
   padding-bottom: 50px;
 }
@@ -222,7 +227,7 @@ header {
           Section 3
 ---------------------------*/
 .lazy-s3 {
-  background: #f9f9f9 url(../assets/placeholder-image.png) no-repeat left;
+  background: $background-color-primary url(../assets/placeholder-image.png) no-repeat left;
   background-position: 0 10%;
   background-size: 300px;
   padding-top: 50px;
@@ -230,7 +235,7 @@ header {
 }
 
 .lazy-s3.visible {
-  background: #f9f9f9 url(../assets/flower-middle-left-min.png) no-repeat left;
+  background: $background-color-primary url(../assets/flower-middle-left-min.png) no-repeat left;
   background-position: 0 10%;
   background-size: 300px;
   padding-top: 50px;
@@ -285,5 +290,3 @@ header {
 }
 
 /*# sourceMappingURL=main.scss.map */
-
-/*# sourceMappingURL=style.css.map */
