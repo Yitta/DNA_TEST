@@ -1,6 +1,30 @@
 /* ---------------------------
          General
 ---------------------------*/
+html, body {
+  width: 100%;  height: 100%;
+  margin: 0;  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  overflow: auto;
+  perspective: 1px; 
+  -webkit-perspective: 1px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+body * {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.parallax-window img {
+    -webkit-transform: translateZ(-0.4px) scale(2);
+    transform: translateZ(-0.5px) scale(1.5);
+    z-index: 0;
+}
 /* CSS Reset */
 * {
     margin: 0;
@@ -207,16 +231,16 @@ header {
     min-height: 40rem;
 }
 
-.parallax-window.visible {
+/*.parallax-window.visible {
     min-height: 40rem;
     background: 0 0;
     background-image: url(../assets/NLMD-2481_Parallax-min.png);
-    /* Create the parallax scrolling effect */
+     Create the parallax scrolling effect 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+}*/
 
 /* ---------------------------
           Section 3
